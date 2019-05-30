@@ -75,6 +75,14 @@ public class Funciones_Administrador {
         }
     }
 
+    public void registrarcliente(Usuario u){
+        if(clientes_registrados.contains(u)){
+            System.out.println("El usuario ya estaba registrado. No puede registrarse otra vez.");
+        } else {
+            clientes_registrados.add(u);
+            System.out.println("Se ha registrado correctamente.");
+        }
+    }
 
     @Override
     public String toString() {
